@@ -8,7 +8,6 @@ De plus, grâce au système de navigation de React Native, vous pourrez changer 
 La dernière étape du projet sera de mettre en place une recherche : grâce à un input, vos utilisateurs peuvent être en mesure de chercher une ville et se verront alors présentées les valeurs pour la ville en question.  
 
 Vous trouverez les captures d'écran de ce à quoi votre application doit globalement ressembler (toutes les images sont jointes dans le projet)  
-Vous trouverez également un découpage des écrans plus détaillé afin de bien comprendre à quoi correspondent les composants  
 
 Bon courage !  
 
