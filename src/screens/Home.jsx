@@ -54,6 +54,7 @@
  * Il faudra appeler cette fonction au submit de notre input, afin de lancer la nouvelle requête et d'avoir la nouvelle ville -> on récupère ses coordonnéesgrâce à l'appel
  * 
  */
+import { Text } from 'react-native';
 
 function Home() {
     // states
@@ -114,6 +115,10 @@ function Home() {
     function fetchCoordsFromCity() {}
 
     return (
-        <></>
+        <>
+        <Text> Hello </Text>
+        </>
     )
 }
+
+export default Home;

@@ -3,7 +3,7 @@
  * Cette application est construite en trois parties : 
  * La première partie va permettre de montrer : la ville (localisée avec le GPS du téléphone), la température, une interprétation du temps, et une horloge
  * 
- * La seconde partie contient : 
+ * La seconde partie contient : une searchbar
  * 
  * La troisième partie : l'heure de lever du soleil, heure de coucher du soleil, vitesse du vent
  * 
@@ -40,9 +40,30 @@
 
 // const Stack = .... (pour quand on en serez à la navigation )
 
-export default function App() {
+import React from 'react';
+import { SafeAreaView, StyleSheet, ImageBackground } from 'react-native';
+import Home from './src/screens/Home'; // Assurez-vous que le chemin d'accès est correct
+
+// Importez l'image localement
+const backgroundImage = require('./assets/images/background-meteo.png');
+
+const App = () => {
   return (
-    <>
-    </>
+    <ImageBackground source={backgroundImage} style={styles.backgroundImage} resizeMode="cover">
+      <SafeAreaView style={styles.safeArea}>
+        <Home />
+      </SafeAreaView>
+    </ImageBackground>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+  },
+  safeArea: {
+    flex: 1,
+  },
+});
+
+export default App;
