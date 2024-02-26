@@ -14,3 +14,18 @@
 /**
  * Dans un temps deux, quand vous commencerez la navigation, il faudra que ce composant ait au niveau de la température la possiblité de cliquer pour pouvoir déclencher un événement de navigation au niveau de son parent (on rappelle, ce composant MeteoBasic est stupide et ne fait rien par lui-même : il reçoit tout de son parent et envoie ses événements à son parent)
  */
+
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const MeteoBasic = () => {
+  return (
+    <View>
+      <Text>MeteoBasic</Text>
+    </View>
+  )
+}
+
+export default MeteoBasic
+
+const styles = StyleSheet.create({})
